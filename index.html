@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Visit Jogja, website wisata interaktif untuk menemukan destinasi, hotel, kuliner, dan membuat itinerary bersama Bapak Jogja." name="description"/>
+<meta content="#07100c" name="theme-color"/>
+
+<title>Visit Jogja | Budget &amp; Bapak Jogja AI Guide</title>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="hero" id="beranda">
+<div aria-hidden="true" class="hero-media">
+<div class="hero-slide active"><img alt="" src="assets/hero-prambanan.jpg"/></div>
+<div class="hero-slide"><img alt="" src="assets/hero-malioboro.jpg"/></div>
+<div class="hero-slide"><img alt="" src="assets/hero-parangtritis.jpg"/></div>
+</div>
+<div class="page hero-inner">
+<nav aria-label="Navigasi utama" class="navbar glass">
+<a class="brand" href="#beranda"><span class="brand-mark"><span>✣</span></span><span class="brand-copy"><small>Visit</small><strong>Jogja</strong></span></a>
+<div class="nav-links" id="navLinks"><a href="#beranda">Beranda</a><a href="#wisata">Wisata</a><a href="#hotel">Hotel</a><a href="#kuliner">Kuliner</a><a href="#itinerary">Itinerary</a><a href="#tentang">Tentang</a></div>
+<button class="nav-chat" id="navChat"><span>●●●</span> Chat Travel Assistant</button>
+<button aria-label="Buka menu" class="menu-btn" id="menuBtn">☰</button>
+</nav>
+<div class="hero-main">
+<div class="hero-copy">
+<p class="eyebrow">Temukan sisi terbaik Yogyakarta</p>
+<h1 id="animatedHeading">Jelajahi Jogja,<br/>Ciptakan Ceritamu</h1>
+<p class="hero-lead">Temukan destinasi menarik, hotel nyaman, dan kuliner khas. Bapak Jogja membantu menyusun perjalanan untuk keluarga, pasangan, teman, maupun perjalanan sendiri.</p>
+<form class="searchbar" id="searchForm">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+<label class="sr-only" for="searchInput">Cari wisata, hotel, atau kuliner</label>
+<input autocomplete="off" id="searchInput" placeholder="Cari tempat wisata, hotel, atau kuliner..."/>
+<button aria-label="Cari">→</button>
+</form>
+<div class="popular"><b>Populer:</b><button class="chip" data-search="Candi Prambanan">Candi Prambanan</button><button class="chip" data-search="Malioboro">Malioboro</button><button class="chip" data-search="Pantai Parangtritis">Pantai Parangtritis</button><button class="chip" data-search="Taman Sari">Taman Sari</button></div>
+</div>
+<div class="hero-side"><div class="hero-note glass"><div class="number">24/7</div><p>Travel assistant lokal untuk rekomendasi rute, tempat makan, penginapan, dan itinerary yang lebih terarah.</p></div></div>
+</div>
+<div class="category-grid">
+<a class="category-card" href="#wisata" style="background-image:url('assets/hero-prambanan.jpg')"><span class="go">→</span><h3>⌖ Tempat Wisata</h3><p>Jelajahi budaya, alam, sejarah, dan suasana khas Jogja.</p></a>
+<a class="category-card" href="#hotel" style="background-image:url('assets/hotel-jogja-1.jpg')"><span class="go">→</span><h3>▣ Hotel</h3><p>Pilih penginapan yang sesuai lokasi, suasana, dan anggaran.</p></a>
+<a class="category-card" href="#kuliner" style="background-image:url('assets/kuliner-kopi-klotok.jpg')"><span class="go">→</span><h3>♨ Kuliner</h3><p>Nikmati gudeg, sate klathak, kopi tradisional, dan menu rumahan.</p></a>
+</div>
+</div>
+</header>
+<main>
+<section class="section" id="wisata"><div class="page"><div class="section-head reveal"><div><p class="section-label">Pilihan destinasi</p><h2>Tempat yang layak masuk rencana.</h2></div><p>Setiap gambar dipilih sesuai destinasi agar pengunjung langsung memahami suasana yang akan mereka temui.</p></div><div class="card-grid four" id="destinationGrid"></div></div></section>
+<section class="section alt" id="hotel"><div class="page"><div class="section-head reveal"><div><p class="section-label">Tempat beristirahat</p><h2>Hotel nyaman di area strategis.</h2></div><p>Pilih suasana modern, heritage, atau pusat kota. Harga pada tampilan merupakan estimasi dan perlu diperiksa kembali.</p></div><div class="card-grid" id="hotelGrid"></div></div></section>
+<section class="section" id="kuliner"><div class="page"><div class="section-head reveal"><div><p class="section-label">Rasa lokal</p><h2>Kuliner khas Jogja.</h2></div><p>Foto makanan kini berbeda untuk setiap kartu dan sesuai dengan hidangan yang dijelaskan.</p></div><div class="card-grid" id="foodGrid"></div></div></section>
+<section class="planner" id="itinerary" style="--planner-image:url('assets/hero-parangtritis.jpg')"><div class="planner-bg"></div><div class="page planner-grid"><div class="planner-card reveal"><p class="section-label">Rencana otomatis</p><h2>Susun liburan sesuai gaya perjalananmu.</h2><p>Bapak Jogja menggabungkan wisata, hotel, kuliner, durasi, dan kisaran anggaran menjadi jadwal yang mudah dibaca.</p><div class="check-list"><div class="check"><i>✓</i><span>Rute dikelompokkan berdasarkan area agar perjalanan lebih efisien.</span></div><div class="check"><i>✓</i><span>Pilihan menyesuaikan keluarga, pasangan, teman, atau solo traveler.</span></div><div class="check"><i>✓</i><span>Itinerary dapat disimpan di browser dan dibuka kembali.</span></div></div><button class="primary" id="openPlanner">Buat itinerary sekarang</button></div><div class="planner-mini reveal"><h3>Mulai dari kebutuhanmu</h3>
+<label for="travelerType">Pergi bersama</label>
+<select id="travelerType"><option value="keluarga">Keluarga, asumsi 4 orang</option><option value="pasangan">Pasangan, 2 orang</option><option value="teman">Teman, asumsi 4 orang</option><option value="sendiri">Sendiri, 1 orang</option></select>
+<label for="tripDays">Durasi perjalanan</label>
+<select id="tripDays"><option value="1">1 hari</option><option selected="" value="2">2 hari</option><option value="3">3 hari</option><option value="4">4 hari</option><option value="5">5 hari</option><option value="6">6 hari</option><option value="7">7 hari</option></select>
+<label for="tripBudget">Kisaran anggaran</label>
+<select id="tripBudget"><option value="hemat">Hemat · Rp250–400 ribu/orang/hari</option><option selected="" value="sedang">Sedang · Rp450–700 ribu/orang/hari</option><option value="nyaman">Nyaman · Rp800 ribu–1,2 juta/orang/hari</option><option value="premium">Premium · Rp1,4–2,2 juta/orang/hari</option></select>
+<div aria-live="polite" class="budget-summary" id="budgetSummary"><div class="budget-summary-top"><div><h4 id="budgetTitle">Paket Sedang</h4><div class="budget-amount" id="budgetAmount">Rp900 ribu–1,4 juta/orang</div></div><span class="budget-pill" id="budgetPill">2 hari</span></div><p class="budget-group" id="budgetGroup">Estimasi total keluarga: Rp3,1–4,8 juta setelah efisiensi kamar dan kendaraan bersama.</p><div class="budget-includes"><span>🍜 Makan</span><span>🛏 Penginapan</span><span>🚗 Transport lokal</span><span>🎟 Tiket wisata</span></div><small class="budget-note">Perkiraan ini tidak termasuk tiket pesawat, kereta, atau bus menuju Yogyakarta. Harga aktual dapat berubah pada akhir pekan dan musim liburan.</small></div>
+<div aria-label="Daftar kategori anggaran" class="budget-levels"><div class="budget-level" data-budget-level="hemat"><strong>Hemat</strong><span>Rp250–400 rb/orang/hari</span></div><div class="budget-level" data-budget-level="sedang"><strong>Sedang</strong><span>Rp450–700 rb/orang/hari</span></div><div class="budget-level" data-budget-level="nyaman"><strong>Nyaman</strong><span>Rp800 rb–1,2 jt/orang/hari</span></div><div class="budget-level" data-budget-level="premium"><strong>Premium</strong><span>Rp1,4–2,2 jt/orang/hari</span></div></div>
+<button class="primary" id="generatePlan">Susun bersama Bapak Jogja</button></div></div></section>
+<section class="section alt" id="tentang"><div class="page about-grid"><div class="avatar-stage reveal"><img alt="Ikon pixel Bapak Jogja berpakaian hitam" src="assets/bapak-jogja-pixel.png"/></div><div class="about-copy reveal"><p class="section-label">Travel assistant lokal</p><h2>Bapak Jogja hadir saat dibutuhkan.</h2><p>Chat tidak langsung memenuhi layar. Pengunjung hanya melihat ikon pixel yang bergerak halus. Panel percakapan baru terbuka setelah ikon ditekan.</p><p>Asisten ini bekerja secara lokal di browser untuk demonstrasi. Ia dapat memberi rekomendasi sederhana, menjawab pencarian dasar, dan membuat itinerary singkat.</p><button class="primary" id="aboutChat">Mulai percakapan</button></div></div></section>
+</main>
+<button aria-label="Buka Bapak Jogja" class="chat-fab" id="chatFab"><img alt="" src="assets/bapak-jogja-pixel.png"/><span class="online-dot"></span></button>
+<aside aria-hidden="true" aria-label="Chat Bapak Jogja" class="chat-panel" id="chatPanel">
+<div class="chat-header"><div class="chat-avatar"><img alt="" src="assets/bapak-jogja-pixel.png"/></div><div class="chat-title"><strong>Bapak Jogja</strong><span>Online</span></div><button aria-label="Tutup chat" class="chat-close" id="chatClose">×</button></div>
+<div class="chat-messages" id="chatMessages"></div>
+<div class="chat-tools">
+<button aria-controls="toolsPanel" aria-expanded="false" class="tools-toggle" id="toolsToggle" type="button">
+<span><b>＋</b> Pilihan cepat</span><small id="travelerBadge">Keluarga</small>
+</button>
+<div class="tools-panel" hidden="" id="toolsPanel">
+<p class="tools-label">Pergi bersama</p>
+<div class="quick-grid"><button data-type="keluarga">👨‍👩‍👧 Keluarga</button><button data-type="pasangan">♥ Pasangan</button><button data-type="teman">🧑‍🤝‍🧑 Teman</button><button data-type="sendiri">♟ Sendiri</button></div>
+<p class="tools-label">Pertanyaan cepat</p>
+<div class="topic-grid"><button data-question="Tampilkan rating wisata dari tertinggi">★ Wisata</button><button data-question="Tampilkan rating hotel dari tertinggi">★ Hotel</button><button data-question="Tampilkan rating kuliner dari tertinggi">★ Kuliner</button><button data-question="Jelaskan kawasan Jogja secara mendalam">⌖ Panduan Jogja</button></div>
+</div>
+</div>
+<form class="chat-form" id="chatForm"><label class="sr-only" for="chatInput">Ketik pesan</label><input id="chatInput" maxlength="280" placeholder="Ketik pesanmu..."/><button aria-label="Kirim">➜</button></form>
+</aside>
+<div class="toast" id="toast"></div>
+<footer><div class="page footer-row"><div>© 2026 Visit Jogja</div><details class="credits"><summary>Kredit foto</summary><div>Prambanan: Crisco 1492, CC BY-SA 3.0. Malioboro: Alltoowell123, CC BY-SA 4.0. Parangtritis: Muhammad Harits Fadhli, CC BY-SA 4.0. Taman Sari: Firzafp, CC BY-SA 4.0. Gudeg: Risanprasetyo / Febri Ady Prasetyo, CC BY-SA 4.0. Sate klathak: Naval Scene, CC BY-SA 4.0. Warung Kopi Klotok: Maria Elisabhet Ika Puspita Sari, CC BY 4.0. Novotel Suites: Esbepe, CC BY-SA 4.0. Phoenix Hotel: CEphoto, Uwe Aranas, CC BY-SA 3.0. Cavinton Hotel: Firzafp, CC BY-SA 4.0.</div></details></div></footer>
+
+<script defer="" src="js/data.js"></script><script defer="" src="js/ai.js"></script><script defer="" src="js/app.js"></script></body>
+</html>
